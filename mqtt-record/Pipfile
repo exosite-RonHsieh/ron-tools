@@ -1,0 +1,12 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+mqtt-record = {git = "https://github.com/exosite/paho.mqtt.python.git",ref = "openssl_sni_support"}
+
+[requires]
+python_version = "3.5"

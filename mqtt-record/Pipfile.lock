@@ -1,0 +1,25 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "7b01ccea0436e1deb7d8bb4fa9b0fbf00178a92ae0be664766cc13590b8c75c6"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.5"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "mqtt-record": {
+            "git": "https://github.com/exosite/paho.mqtt.python.git",
+            "ref": "9acc14285b2c06b14816d017912c25ec9ff1f0da"
+        }
+    },
+    "develop": {}
+}

@@ -1,0 +1,16 @@
+id,Percentage
+display_name,Percentage
+properties.data_type,PERCENTAGE
+properties.primitive_type,NUMERIC
+properties.data_unit,PERCENT
+properties.precision,2
+data,-18.01
+,-19.12
+,-20.23
+,-21.34
+,-22.45
+,-23.56
+,-24.67
+,-25.78
+,-26.89
+,-27.01

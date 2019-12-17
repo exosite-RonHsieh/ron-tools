@@ -1,0 +1,1317 @@
+product:
+  name: simronhsieh
+  id: a1icct42gmkyo0000
+  uri: a1icct42gmkyo0000.m2.exosite.io
+solution:
+  uri: simulator.apps.exosite.io
+connectivity:
+  type: murano
+  protocol: http
+  authentication: token
+  keepalive: 30
+jobs:
+  create:
+    delay: 2
+    idlist:
+      strategy: serial
+      prefix: Ron
+      range: [1, 1]
+  remove:
+    delay: 2
+    idlist:
+      strategy: serial
+      prefix: Ron
+      range: [1, 1]
+  report:
+    period: 5
+    delay: 2
+    nowait: true
+    repeat: 10
+    statistic: true
+    idlist:
+      strategy: serial
+      prefix: Ron
+      range: [1, 1]
+    fields:
+      config_io:
+        json:
+          channels:
+            json:
+              Acceleration:
+                json:
+                  display_name:
+                    val: 'Acceleration'
+                  description:
+                    val: 'Random 0 to 100 Acceleration with ft/s²'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'ACCELERATION'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'FEET_PER_SEC2'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              Amount of Substance:
+                json:
+                  display_name:
+                    val: 'Amount of Substance'
+                  description:
+                    val: 'Random 0 to 100 Amount of Substance with mol'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'AMOUNT'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'MOLE'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              Angular Acceleration:
+                json:
+                  display_name:
+                    val: 'Angular Acceleration'
+                  description:
+                    val: 'Random 0 to 180 Angular Acceleration with deg/s²'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'ANGULAR_ACCEL'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'DEG_PER_SEC2'
+                      max:
+                        val: '180'
+                      min:
+                        val: '0'
+              Angular Velocity:
+                json:
+                  display_name:
+                    val: 'Angular Velocity'
+                  description:
+                    val: 'Random 0 to 180 Angular Velocity with  °/hr'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'ANGULAR_VEL'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'DEG_PER_HOUR'
+                      max:
+                        val: '180'
+                      min:
+                        val: '0'
+              Area:
+                json:
+                  display_name:
+                    val: 'Area'
+                  description:
+                    val: 'Random 0 to 1000 Area with acre'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'AREA'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'ACRE'
+                      max:
+                        val: '1000'
+                      min:
+                        val: '0'
+              Battery:
+                json:
+                  display_name:
+                    val: 'Battery'
+                  description:
+                    val: 'Random 0 to 100 Battery with percentage'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'BATTERY_PERCENTAGE'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'PERCENT'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              Boolean:
+                json:
+                  display_name:
+                    val: 'Boolean'
+                  description:
+                    val: 'Random true or false Boolean'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'BOOLEAN'
+                      primitive_type:
+                        val: 'BOOLEAN'
+              Capacitance:
+                json:
+                  display_name:
+                    val: 'Capacitance'
+                  description:
+                    val: 'Random 0 to 100 Capacitance with F'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'CAPACITANCE'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'FARAD'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              Currency:
+                json:
+                  display_name:
+                    val: 'Currency'
+                  description:
+                    val: 'Random 0 to 1000000 Currency with AUD (A$)'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'CURRENCY'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'AUD'
+                      max:
+                        val: '1000000'
+                      min:
+                        val: '0'
+              Data:
+                json:
+                  display_name:
+                    val: 'Data'
+                  description:
+                    val: 'Random 0 to 1000 Data with B'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'DATA'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'BYTE'
+                      max:
+                        val: '1000'
+                      min:
+                        val: '0'
+              Density:
+                json:
+                  display_name:
+                    val: 'Density'
+                  description:
+                    val: 'Random 0 to 1000 Density with kg/m³'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'DENSITY'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'KG_PER_M3'
+                      max:
+                        val: '1000'
+                      min:
+                        val: '0'
+              Displacement:
+                json:
+                  display_name:
+                    val: 'Displacement'
+                  description:
+                    val: 'Random 0 to 100 Displacement with cm'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'DISPLACEMENT'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'CENTIMETERS'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              Dynamic Viscosity:
+                json:
+                  display_name:
+                    val: 'Dynamic Viscosity'
+                  description:
+                    val: 'Random 0 to 100 Dynamic Viscosity with mPa·s'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'DYNAMIC_VISCOSITY'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'MILLIPASCAL_SEC'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              Electric Current:
+                json:
+                  display_name:
+                    val: 'Electric Current'
+                  description:
+                    val: 'Random 0 to 1000 Electric Current with A'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'ELEC_CURRENT'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'AMPERE'
+                      max:
+                        val: '1000'
+                      min:
+                        val: '0'
+              Electrical Conductance:
+                json:
+                  display_name:
+                    val: 'Electrical Conductance'
+                  description:
+                    val: 'Random 0 to 100 Electrical Conductance with S'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'ELEC_CONDUCTANCE'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'SIEMENS'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              Electrical Potential:
+                json:
+                  display_name:
+                    val: 'Electrical Potential'
+                  description:
+                    val: 'Random 0 to 1000 Electrical Potential with kV'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'ELEC_POTENTIAL'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'KILOVOLT'
+                      max:
+                        val: '1000'
+                      min:
+                        val: '0'
+              Electrical Resistance:
+                json:
+                  display_name:
+                    val: 'Electrical Resistance'
+                  description:
+                    val: 'Random 0 to 1000 Electrical Resistance with kΩ'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'ELEC_RESISTANCE'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'KILOOHM'
+                      max:
+                        val: '1000'
+                      min:
+                        val: '0'
+              Electrical Resistivity:
+                json:
+                  display_name:
+                    val: 'Electrical Resistivity'
+                  description:
+                    val: 'Random 0 to 100 Electrical Resistivity with Ω⋅m'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'ELEC_RESISTIVITY'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'OHM_METER'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              Energy:
+                json:
+                  display_name:
+                    val: 'Energy'
+                  description:
+                    val: 'Random 0 to 100 Energy with J'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'ENERGY'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'JOULE'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              Field Level:
+                json:
+                  display_name:
+                    val: 'Field Level'
+                  description:
+                    val: 'Random 0 to 100 Field Level with dB'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'FIELD_LEVEL'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'DECIBEL'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              Flow:
+                json:
+                  display_name:
+                    val: 'Flow'
+                  description:
+                    val: 'Random 0 to 1000 Flow with GPH'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'FLOW'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'GALLONS_PER_HOUR'
+                      max:
+                        val: '1000'
+                      min:
+                        val: '0'
+              Flow Mass:
+                json:
+                  display_name:
+                    val: 'Flow Mass'
+                  description:
+                    val: 'Random 0 to 1000 Flow Mass with kg/s'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'FLOW_MASS'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'KG_PER_SEC'
+                      max:
+                        val: '1000'
+                      min:
+                        val: '0'
+              Force:
+                json:
+                  display_name:
+                    val: 'Force'
+                  description:
+                    val: 'Random 0 to 100 Force with N'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'FORCE'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'NEWTON'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              Frequency:
+                json:
+                  display_name:
+                    val: 'Frequency'
+                  description:
+                    val: 'Random 0 to 1000 Frequency with Hz'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'FREQUENCY'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'HERTZ'
+                      max:
+                        val: '1000'
+                      min:
+                        val: '0'
+              Heat:
+                json:
+                  display_name:
+                    val: 'Heat'
+                  description:
+                    val: 'Random 0 to 100 Heat with Btu'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'HEAT'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'BTU'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              Humidity:
+                json:
+                  display_name:
+                    val: 'Humidity'
+                  description:
+                    val: 'Random 0 to 100 Humidity with percentage'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'HUMIDITY'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'PERCENT'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              Illuminance:
+                json:
+                  display_name:
+                    val: 'Illuminance'
+                  description:
+                    val: 'Random 0 to 100 Illuminance with fc'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'ILLUMINANCE'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'FOOT_CANDLES'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              Inductance:
+                json:
+                  display_name:
+                    val: 'Inductance'
+                  description:
+                    val: 'Random 0 to 1000 Inductance with H'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'INDUCTANCE'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'HENRY'
+                      max:
+                        val: '1000'
+                      min:
+                        val: '0'
+              Jerk:
+                json:
+                  display_name:
+                    val: 'Jerk'
+                  description:
+                    val: 'Random 0 to 100 Jerk with m/s³'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'JERK'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'METER_PER_SEC3'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              JSON:
+                json:
+                  display_name:
+                    val: 'JSON'
+                  description:
+                    val: 'Json data for test json panel'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'JSON'
+                      primitive_type:
+                        val: 'JSON'
+              Kinematic Viscosity:
+                json:
+                  display_name:
+                    val: 'Kinematic Viscosity'
+                  description:
+                    val: 'Random 0 to 100 Kinematic Viscosity with cSt'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'KINEMATIC_VISCOSITY'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'CENTISTOKES'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              Length:
+                json:
+                  display_name:
+                    val: 'Length'
+                  description:
+                    val: 'Random 0 to 100 Length with cm'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'LENGTH'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'CENTIMETERS'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              Linear Density:
+                json:
+                  display_name:
+                    val: 'Linear Density'
+                  description:
+                    val: 'Random 0 to 1000 Linear Density with kg/m'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'LINEAR_DENSITY'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'KILOGRAM_PER_METER'
+                      max:
+                        val: '1000'
+                      min:
+                        val: '0'
+              Location:
+                json:
+                  display_name:
+                    val: 'Location'
+                  description:
+                    val: 'Taichung ExoSite Location with latlng'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'LOCATION'
+                      primitive_type:
+                        val: 'JSON'
+                      data_unit:
+                        val: 'LAT_LONG'
+              Location Random:
+                json:
+                  display_name:
+                    val: 'Location Random'
+                  description:
+                    val: 'Random Location with latlng'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'LOCATION'
+                      primitive_type:
+                        val: 'JSON'
+                      data_unit:
+                        val: 'LAT_LONG'
+              Luminance:
+                json:
+                  display_name:
+                    val: 'Luminance'
+                  description:
+                    val: 'Random 0 to 100 Luminance with cd/m2'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'LUMINANCE'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'CANDELA_PER_METER2'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              Luminous Flux:
+                json:
+                  display_name:
+                    val: 'Luminous Flux'
+                  description:
+                    val: 'Random 0 to 1000 Luminous Flux with lm'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'LUMINOUS_FLUX'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'LUMENS'
+                      max:
+                        val: '1000'
+                      min:
+                        val: '0'
+              Luminous Intensity:
+                json:
+                  display_name:
+                    val: 'Luminous Intensity'
+                  description:
+                    val: 'Random 0 to 10000 Luminous Intensity with cd'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'LUMINOUS_INTENSITY'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'CANDELA'
+                      max:
+                        val: '10000'
+                      min:
+                        val: '0'
+              Mass:
+                json:
+                  display_name:
+                    val: 'Mass'
+                  description:
+                    val: 'Random 0 to 100 Mass with g'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'MASS'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'GRAM'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              Number:
+                json:
+                  display_name:
+                    val: 'Number'
+                  description:
+                    val: 'Random -100 to 100 Number'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'Number'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      max:
+                        val: '100'
+                      min:
+                        val: '-100'
+              Particles:
+                json:
+                  display_name:
+                    val: 'Particles'
+                  description:
+                    val: 'Random 0 to 10000000 Particles with ppb'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'PARTICLES'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'PPB'
+                      max:
+                        val: '10000000'
+                      min:
+                        val: '0'
+              Percentage:
+                json:
+                  display_name:
+                    val: 'Percentage'
+                  description:
+                    val: 'Random 0 to 100 Percentage with percentage'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'PERCENTAGE'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'PERCENT'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+                      precision:
+                        val: '2'
+              pH:
+                json:
+                  display_name:
+                    val: 'pH'
+                  description:
+                    val: 'Random 0 to 100 pH with pH'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'PH'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'PH'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              Plane Angle:
+                json:
+                  display_name:
+                    val: 'Plane Angle'
+                  description:
+                    val: 'Random 0 to 360 Plane Angle with \'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'ANGLE'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'ARCMINUTE'
+                      max:
+                        val: '360'
+                      min:
+                        val: '0'
+              Power:
+                json:
+                  display_name:
+                    val: 'Power'
+                  description:
+                    val: 'Random 0 to 100 Power with HP'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'POWER'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'HORSEPOWER'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              Power Level:
+                json:
+                  display_name:
+                    val: 'Power Level'
+                  description:
+                    val: 'Random 0 to 100 Power Level with dB'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'POWER_LEVEL'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'DECIBEL'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              Pressure:
+                json:
+                  display_name:
+                    val: 'Pressure'
+                  description:
+                    val: 'Random 0 to 100 Pressure with atm'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'PRESSURE'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'ATMOSPHERE'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              Signal Strength:
+                json:
+                  display_name:
+                    val: 'Signal Strength'
+                  description:
+                    val: 'Random 0 to 100 Signal Strength with percentage'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'SIGNAL_STRENGTH_PERCENTAGE'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'PERCENT'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              Solid Angle:
+                json:
+                  display_name:
+                    val: 'Solid Angle'
+                  description:
+                    val: 'Random 0 to 100 Solid Angle with sr'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'SOLID_ANGLE'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'STERADIAN'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              Speed:
+                json:
+                  display_name:
+                    val: 'Speed'
+                  description:
+                    val: 'Random 0 to 1000 Speed with fps'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'SPEED'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'FEET_PER_SEC'
+                      max:
+                        val: '1000'
+                      min:
+                        val: '0'
+              String:
+                json:
+                  display_name:
+                    val: 'String'
+                  description:
+                    val: 'Send the same String value'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'STRING'
+                      primitive_type:
+                        val: 'STRING'
+              Temperature:
+                json:
+                  display_name:
+                    val: 'Temperature'
+                  description:
+                    val: 'Random -100 to 100 Temperature with °C'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'TEMPERATURE'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'DEG_CELSIUS'
+                      max:
+                        val: '100'
+                      min:
+                        val: '-100'
+              Time:
+                json:
+                  display_name:
+                    val: 'Time'
+                  description:
+                    val: 'Random 0 to 365 Time with day'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'TIME'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'DAY'
+                      max:
+                        val: '365'
+                      min:
+                        val: '0'
+              Torque:
+                json:
+                  display_name:
+                    val: 'Torque'
+                  description:
+                    val: 'Random 0 to 100 Torque with lbf⋅ft'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'TORQUE'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'FOOT_POUNDS'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              URL:
+                json:
+                  display_name:
+                    val: 'URL'
+                  description:
+                    val: 'Send URL link with Google page'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'URL'
+                      primitive_type:
+                        val: 'JSON'
+              Velocity:
+                json:
+                  display_name:
+                    val: 'Velocity'
+                  description:
+                    val: 'Random 0 to 1000 Velocity with fps'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'VELOCITY'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'FEET_PER_SEC'
+                      max:
+                        val: '1000'
+                      min:
+                        val: '0'
+              Volume:
+                json:
+                  display_name:
+                    val: 'Volume'
+                  description:
+                    val: 'Random 0 to 100 Volume with cm³'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'VOLUME'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'CENTIMETER3'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              Weight:
+                json:
+                  display_name:
+                    val: 'Weight'
+                  description:
+                    val: 'Random 0 to 100 Weight with MT'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'WEIGHT'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'METRIC_TON'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+              Work:
+                json:
+                  display_name:
+                    val: 'Work'
+                  description:
+                    val: 'Random 0 to 100 Work with ft⋅lb'
+                  properties:
+                    json:
+                      data_type:
+                        val: 'WORK'
+                      primitive_type:
+                        val: 'NUMERIC'
+                      data_unit:
+                        val: 'FOOT_POUND'
+                      max:
+                        val: '100'
+                      min:
+                        val: '0'
+      data_in:
+        json:
+          Acceleration:
+            fn: rand_int
+            min: 0
+            max: 100
+          Amount of Substance:
+            fn: rand_int
+            min: 0
+            max: 100
+          Angular Acceleration:
+            fn: rand_int
+            min: 0
+            max: 180
+          Angular Velocity:
+            fn: rand_int
+            min: 0
+            max: 180
+          Area:
+            fn: rand_int
+            min: 0
+            max: 1000
+          Battery:
+            fn: rand_int
+            min: 0
+            max: 100
+          Boolean:
+            fn: rand_bool
+          Capacitance:
+            fn: rand_int
+            min: 0
+            max: 100
+          Currency:
+            fn: rand_int
+            min: 0
+            max: 1000000
+          Data:
+            fn: rand_int
+            min: 0
+            max: 1000
+          Density:
+            fn: rand_int
+            min: 0
+            max: 1000
+          Displacement:
+            fn: rand_int
+            min: 0
+            max: 100
+          Dynamic Viscosity:
+            fn: rand_int
+            min: 0
+            max: 100
+          Electric Current:
+            fn: rand_int
+            min: 0
+            max: 1000
+          Electrical Conductance:
+            fn: rand_int
+            min: 0
+            max: 100
+          Electrical Potential:
+            fn: rand_int
+            min: 0
+            max: 1000
+          Electrical Resistance:
+            fn: rand_int
+            min: 0
+            max: 1000
+          Electrical Resistivity:
+            fn: rand_int
+            min: 0
+            max: 100
+          Energy:
+            fn: rand_int
+            min: 0
+            max: 100
+          Field Level:
+            fn: rand_int
+            min: 0
+            max: 100
+          Flow:
+            fn: rand_int
+            min: 0
+            max: 1000
+          Flow Mass:
+            fn: rand_int
+            min: 0
+            max: 1000
+          Force:
+            fn: rand_int
+            min: 0
+            max: 100
+          Frequency:
+            fn: rand_int
+            min: 0
+            max: 1000
+          Heat:
+            fn: rand_int
+            min: 0
+            max: 100
+          Humidity:
+            fn: rand_int
+            min: 0
+            max: 100
+          Illuminance:
+            fn: rand_int
+            min: 0
+            max: 100
+          Inductance:
+            fn: rand_int
+            min: 0
+            max: 1000
+          Jerk:
+            fn: rand_int
+            min: 0
+            max: 100
+          JSON:
+            json:
+              headers:
+                val: ['Gender', 'First Name', 'Last Name']
+              valuse:
+                val: [['Girl', 'Judy', 'Que']
+                      ['Girl', 'Comet', 'Lin']
+                      ['Boy', 'Ron', 'Hsieh']]
+          Kinematic Viscosity:
+            fn: rand_int
+            min: 0
+            max: 100
+          Length:
+            fn: rand_int
+            min: 0
+            max: 100
+          Linear Density:
+            fn: rand_int
+            min: 0
+            max: 1000
+          Location:
+            json:
+              lat:
+                val: 24.159304
+              lng:
+                val: 120.646670
+          Location Random:
+            json:
+              lat:
+                fn: rand_int
+                min: 0
+                max: 90
+              lng:
+                fn: rand_int
+                min: 0
+                max: 180
+          Luminance:
+            fn: rand_int
+            min: 0
+            max: 100
+          Luminous Flux:
+            fn: rand_int
+            min: 0
+            max: 1000
+          Luminous Intensity:
+            fn: rand_int
+            min: 0
+            max: 10000
+          Mass:
+            fn: rand_int
+            min: 0
+            max: 100
+          Number:
+            fn: rand_int
+            min: -100
+            max: 100
+          Particles:
+            fn: rand_int
+            min: 0
+            max: 10000000
+          Percentage:
+            fn: rand_int
+            min: 0
+            max: 100
+          pH:
+            fn: rand_int
+            min: 0
+            max: 100
+          Plane Angle:
+            fn: rand_int
+            min: 0
+            max: 360
+          Power:
+            fn: rand_int
+            min: 0
+            max: 100
+          Power Level:
+            fn: rand_int
+            min: 0
+            max: 100
+          Pressure:
+            fn: rand_int
+            min: 0
+            max: 100
+          Signal Strength:
+            fn: rand_int
+            min: 0
+            max: 100
+          Solid Angle:
+            fn: rand_int
+            min: 0
+            max: 100
+          Speed:
+            fn: rand_int
+            min: 0
+            max: 1000
+          String:
+            val: 'Hello~ my name is Ron Hsieh I like ExoSite'
+          Temperature:
+            fn: rand_int
+            min: -100
+            max: 100
+          Time:
+            fn: rand_int
+            min: 0
+            max: 365
+          Torque:
+            fn: rand_int
+            min: 0
+            max: 100
+          URL:
+            json:
+              url:
+                val: 'https://google.com'
+              title:
+                val: 'Google'
+          Velocity:
+            fn: rand_int
+            min: 0
+            max: 1000
+          Volume:
+            fn: rand_int
+            min: 0
+            max: 100
+          Weight:
+            fn: rand_int
+            min: 0
+            max: 100
+          Work:
+            fn: rand_int
+            min: 0
+            max: 100

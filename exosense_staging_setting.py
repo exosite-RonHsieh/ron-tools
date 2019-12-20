@@ -60,7 +60,7 @@ MURANO_URL = os.getenv('MURANO_URL','https://www.exosite-staging.com')
 
 # Product
 # Modify these parameters will also effect MuranoData.py
-PRODUCT_HOST = os.getenv('PRODUCT_HOST','m2.exosite.io')
+PRODUCT_HOST = os.getenv('PRODUCT_HOST','m2.exosite-staging.io')
 PRODUCT_ID = os.getenv('PRODUCT_ID','b2czzweyo5og00000')
 DEVICE_QA001 = os.getenv('DEVICE_QA001','QA001')
 DEVICE_QA002 = os.getenv('DEVICE_QA002','QA002')
